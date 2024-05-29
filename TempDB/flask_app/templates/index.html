@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Temps {% endblock %}</h1>
+    {% for temp in temps %}
+        <div class='post'>
+            <p>Celsius: {{ temp['celsius'] }}</p>
+            <p>Fahrenheit: {{ temp['fahrenheit'] }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
