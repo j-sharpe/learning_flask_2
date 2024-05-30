@@ -34,7 +34,6 @@ def create():
             except ValueError:
                 flash('Input must be an integer.')
         return redirect(url_for('index'))
-        #return render_template('inh_Get_Temp.html', Fahrenheit=fahrenheit)
 
     return render_template('create.html')
 
@@ -46,5 +45,5 @@ def fahrenheit_from(celsius):
     fahrenheit = round(fahrenheit, 3)
     return fahrenheit
 
-#Need to figure out how to check that celsius value is int and not empty
+
 
